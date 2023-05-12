@@ -33,7 +33,7 @@
             this.panel_SystemMessage = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.프로그램ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItem_EXIT = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_InitBrowser = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.panel_Container.SuspendLayout();
@@ -81,16 +81,17 @@
             this.프로그램ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuItem_InitBrowser,
             this.toolStripMenuItem1,
-            this.종료ToolStripMenuItem});
+            this.menuItem_EXIT});
             this.프로그램ToolStripMenuItem.Name = "프로그램ToolStripMenuItem";
             this.프로그램ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.프로그램ToolStripMenuItem.Text = "프로그램";
             // 
-            // 종료ToolStripMenuItem
+            // menuItem_EXIT
             // 
-            this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.종료ToolStripMenuItem.Text = "종료";
+            this.menuItem_EXIT.Name = "menuItem_EXIT";
+            this.menuItem_EXIT.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_EXIT.Text = "종료";
+            this.menuItem_EXIT.Click += new System.EventHandler(this.menuItem_EXIT_Click);
             // 
             // menuItem_InitBrowser
             // 
@@ -130,7 +131,7 @@
         private System.Windows.Forms.Panel panel_SystemMessage;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 프로그램ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 종료ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuItem_EXIT;
         private System.Windows.Forms.ToolStripMenuItem menuItem_InitBrowser;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
     }

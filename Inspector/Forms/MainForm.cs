@@ -23,5 +23,11 @@ namespace Inspector.Forms
         {
 
         }
+
+        private void menuItem_EXIT_Click(object sender, EventArgs e)
+        {
+            // TODO : 청소
+            Environment.Exit(0);
+        }
     }
 }
