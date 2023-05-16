@@ -28,10 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.components = new System.ComponentModel.Container();
+            this.InterfaceTimer = new System.Windows.Forms.Timer(this.components);
+            this.panel_Container = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panel_Container.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // InterfaceTimer
+            // 
+            this.InterfaceTimer.Enabled = true;
+            this.InterfaceTimer.Interval = 50;
+            this.InterfaceTimer.Tick += new System.EventHandler(this.InterfaceTimer_Tick);
+            // 
+            // panel_Container
+            // 
+            this.panel_Container.Controls.Add(this.richTextBox1);
+            this.panel_Container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_Container.Location = new System.Drawing.Point(0, 0);
+            this.panel_Container.Name = "panel_Container";
+            this.panel_Container.Size = new System.Drawing.Size(150, 150);
+            this.panel_Container.TabIndex = 0;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(150, 150);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            // 
+            // SystemConsole
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.panel_Container);
+            this.Name = "SystemConsole";
+            this.Load += new System.EventHandler(this.SystemConsole_Load);
+            this.panel_Container.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer InterfaceTimer;
+        private System.Windows.Forms.Panel panel_Container;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

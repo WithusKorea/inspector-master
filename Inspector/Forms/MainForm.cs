@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Inspector.UserControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,17 +12,22 @@ using System.Windows.Forms;
 namespace Inspector.Forms
 {
     public partial class MainForm : Form
-    {
+    {        
         public MainForm()
         {
             InitializeComponent();
             this.ShowIcon = false;
-            this.Text = Application.ProductName;            
+            this.Text = Application.ProductName;
+
+            #region
+            // 시스템 콘솔 초기화
+            panel_SystemMessage.Controls.Add(SystemConsole.Instance);
+            #endregion
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            MessageQueue.Instance.Enqueue("메인 화면 초기화 완료");
         }
 
         private void menuItem_EXIT_Click(object sender, EventArgs e)
