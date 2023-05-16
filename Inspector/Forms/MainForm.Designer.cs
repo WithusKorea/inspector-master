@@ -33,9 +33,9 @@
             this.panel_SystemMessage = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.프로그램ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItem_EXIT = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItem_InitBrowser = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuItem_EXIT = new System.Windows.Forms.ToolStripMenuItem();
             this.panel_Container.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -86,23 +86,24 @@
             this.프로그램ToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.프로그램ToolStripMenuItem.Text = "프로그램";
             // 
+            // menuItem_InitBrowser
+            // 
+            this.menuItem_InitBrowser.Name = "menuItem_InitBrowser";
+            this.menuItem_InitBrowser.Size = new System.Drawing.Size(180, 22);
+            this.menuItem_InitBrowser.Text = "브라우저 열기";
+            this.menuItem_InitBrowser.Click += new System.EventHandler(this.menuItem_InitBrowser_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            // 
             // menuItem_EXIT
             // 
             this.menuItem_EXIT.Name = "menuItem_EXIT";
             this.menuItem_EXIT.Size = new System.Drawing.Size(180, 22);
             this.menuItem_EXIT.Text = "종료";
             this.menuItem_EXIT.Click += new System.EventHandler(this.menuItem_EXIT_Click);
-            // 
-            // menuItem_InitBrowser
-            // 
-            this.menuItem_InitBrowser.Name = "menuItem_InitBrowser";
-            this.menuItem_InitBrowser.Size = new System.Drawing.Size(180, 22);
-            this.menuItem_InitBrowser.Text = "브라우저 열기";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // MainForm
             // 

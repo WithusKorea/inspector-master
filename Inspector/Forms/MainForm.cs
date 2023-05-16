@@ -1,4 +1,5 @@
-﻿using Inspector.UserControls;
+﻿using Inspector.Controllers;
+using Inspector.UserControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,10 +31,15 @@ namespace Inspector.Forms
             MessageQueue.Instance.Enqueue("메인 화면 초기화 완료");
         }
 
+        private void menuItem_InitBrowser_Click(object sender, EventArgs e)
+        {
+            BrowserController.Instance.InitializeBrowser();
+        }
+
         private void menuItem_EXIT_Click(object sender, EventArgs e)
         {
             // TODO : 청소
             Environment.Exit(0);
-        }
+        }        
     }
 }
